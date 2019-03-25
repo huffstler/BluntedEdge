@@ -9,6 +9,9 @@
 // If possible, how can we remove the edge case from the below loop
 // so that the "if" statement isn't necessary?
 public void SQLBuilder( Foo criteria ) {
+ // This isn't the important part.
+ StrinBuilder queryBuilder = new StringBuilder("SELECT * FROM BAR WHERE ...");
+ // This is.
   for (int i = 0; i < criteria.size(); i++) {
     if (i > 0) {
       queryBuilder.append(" AND ");
